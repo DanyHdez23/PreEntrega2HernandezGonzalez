@@ -1,0 +1,36 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#servicios {
+    background-color: #F2F5F7;
+}
+
+h1 {
+color: #2B73B2;
+}
+
+h2{
+    color: #2869A2;
+}
+
+h3 {
+    color: #183B59 ;
+}
+
+header li {
+
+    list-style-type: none;
+}
+
+
+
+a {
+    color: navy;
+}
+
+
+footer {
+    background-color: #E3E8ED;
+}
+
