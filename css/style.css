@@ -194,6 +194,25 @@ header img {
     align-items: center;
     justify-content: center;
     text-align: center;
+ 
+}
+
+.contact-form {
+    margin: 80px 120px ;
+    display: flex;
+    gap: 80px;
+    justify-content: space-around;
+}
+
+.formulario {
+    flex: 1;
+    padding: 30px ;
+}
+
+.detalles-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -271,7 +290,32 @@ header img {
         font-size: 18px;
     }
 
+    h3 {
+        font-size: 18px;
+    }
+
+    span {
+        font-size: 16px;
+    }
+
     .beneficio {
         width: 40px;
     }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 20px;
+        gap: 30px;
+        
+    
+    }
+
+
+
+
+
+
+
 }
+
