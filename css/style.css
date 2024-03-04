@@ -266,4 +266,12 @@ header img {
         align-items: center;
         text-align: center;
     }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .beneficio {
+        width: 40px;
+    }
 }
