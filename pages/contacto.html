@@ -10,22 +10,53 @@
 </head>
 <body>
     
-    <header>
-       
-            <img src="../img/logo-horizontal.jpg" alt="logo horizontal" width="100px" >
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="./conocenos.html">Conócenos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="./cita.html">Agendar cita</a></li>
-                </ul>
-            </nav>
-    </header>
+  <header class=".container-fluid">
+    <img
+      src="../img/logo-SMI2.svg"
+      alt="logo horizontal"/>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./conocenos.html">Conócenos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cita.html">Agenda una cita</a>
+            </li>
+  
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
 
     <main> 
-        <h1> Contacto </h1>
+
+       <!-- Hero ....................-->
+        <div class="container-fluid sub-hero" style="background-image: url(../img/contacto-hero.jpg) ;"> 
+        <h1> Contáctanos </h1>
+
+      </div>
+      <!-- Hero ....................--> 
+
+  
 
         <section>
             <img src="../img/email.jpg" alt="icono email" width="50px">
@@ -44,11 +75,35 @@
 
     </main>
 
-    <footer> 
-
-        <!-- Se ha dejado en blanco a propósito, ya que en esta página no quiero incluir el footer-->
-        <h5>Copyright &copy; MVP 2024</h5>
+     <!--.........Footer..........-->
+     <footer class="footer-container">
+      <img src="../img/logo-SMI2.svg" alt="logo vertical" width="120px" />
+      
+      <div class="contact-info">
+        <h4>Contacto</h4>
+        <ul>
+          <li>info@smartmarketing@gmail.com</li>
+          <li>+52 477 234 0730</li>
+          <li>
+            León, Guanajuato.<br />
+            México
+          </li>
+        </ul>
+      </div>
+    
+      <div class="services">
+        <h4>Servicios</h4>
+        <ul>
+          <li>Diseño Web</li>
+          <li>Marketing Digital</li>
+          <li>Diseño Gráfico</li>
+        </ul>
+      </div>
+    
+      <h5 class="copyright">Copyright &copy; MVP 2024</h5>
     </footer>
+    <!--.........Footer..........-->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

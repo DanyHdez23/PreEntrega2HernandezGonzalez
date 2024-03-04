@@ -1,36 +1,269 @@
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
 }
 
-#servicios {
-    background-color: #F2F5F7;
+:root {
+    --blanco: #ffffff;
+    --azul-logo: #1B277B;
+    --primario: #183B59;
+    --secundario:  #2B73B2;
+    --bg-gris: #E3E8ED;
+
 }
 
 h1 {
-color: #2B73B2;
+color: var(--blanco);
+padding-bottom: 70px;
+font-size: 55px;
 }
 
 h2{
-    color: #2869A2;
+    font-size: 40px;
+    color: var(--blanco)
 }
 
 h3 {
-    color: #183B59 ;
+    font-size: 25px ;
+    color: var(--primario) ;
 }
 
-header li {
-
-    list-style-type: none;
+h4 {
+    color:var(--primario);
+    font-size: 18px;
 }
 
-
-
-a {
-    color: navy;
-}
 
 
 footer {
-    background-color: #E3E8ED;
+    background-color:var(--bg-gris);
 }
 
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+
+}
+
+
+header img {
+    width: 250px;
+}
+
+.navbar-nav .nav-link {
+    color:  var(--primario);
+    font-weight: 600;
+}
+
+
+.hero {
+    background-image:url(../img/Fondo-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 50px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.botones-hero a {
+    text-decoration: none;
+    color: var(--azul-logo);
+    background-color: var(--blanco);
+    padding: 5px 25px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--blanco);
+    margin: 15px;
+    font-size: 19px;
+
+  
+}
+
+.botones-hero a:hover {
+    background-color: var(--azul-logo);
+    color: #F2F5F7;
+    border-color:var(--azul-logo) ;
+}
+
+
+
+.container {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 180px;
+  }
+  
+  .container img {
+    max-width: 450px;
+  }
+
+.boton {
+    text-decoration: none;
+    color: var(--blanco);
+    background-color: var(--secundario);
+    padding: 5px 25px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--blanco);
+    margin: 15px;
+    font-size: 19px;
+
+}
+
+.boton:hover {
+    background-color: var(--azul-logo);
+    color: #F2F5F7;
+    border-color:var(--azul-logo) ;
+}
+
+
+.servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.titulo-servicios {
+    color: var(--primario);
+    grid-column: 1/-1;
+    text-align: center;
+    
+}
+
+.btn-primary {
+    background-color:var(--secundario);
+    border-color: var(--secundario) ;
+  }
+
+
+.btn-primary:hover{
+    background-color: var(--azul-logo);
+
+}
+
+
+
+
+.footer-container {
+    display: grid;
+    align-items: start;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px 35px ;
+  }
+  
+  .contact-info .services {
+    grid-column: span 1; 
+  }
+
+  
+  .footer-container img {
+    grid-column: span 1; 
+    width: 70%;
+  }
+  
+  .footer-container .copyright {
+    grid-column: span 3; 
+    font-size: 16px;
+  }
+
+  .footer-container ul {
+    list-style: none;
+  }
+  
+ 
+/*............................Subpaginas................*/
+
+.sub-hero {
+    background-color: #1B277B;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+
+/*Versión Responsiva--------------------------------------------------------------*/
+
+  @media screen and (max-width: 425px) {
+    p {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    .hero {
+        width: 100%;
+    }
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .botones-hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .botones-hero a {
+        width: 100%;
+        font-size: 16px;
+        margin: 15px ;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px 15px;
+    }
+
+    .container img {
+        max-width: 70%;
+    }
+
+    .servicios {
+        grid-template-columns: 1fr;
+        margin: 10px 20px;
+    }
+
+    .card {
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px 5px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
