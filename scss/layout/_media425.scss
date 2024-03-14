@@ -1,0 +1,94 @@
+@media screen and (max-width: 425px) {
+    p {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        width: 100%;
+
+        h2 {
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .botones-hero {
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+
+            a {
+                width: 100%;
+                font-size: 16px;
+                margin: 15px;
+            }
+        }
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px 15px;
+
+        img {
+            max-width: 70%;
+        }
+    }
+
+    .servicios {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 80px;
+        padding-bottom: 80px;
+
+        .titulo-servicios {
+            color: var(--primario);
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        .card {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0px 5px;
+        }
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    h2,
+    h3 {
+        font-size: 18px;
+    }
+
+    span {
+        font-size: 16px;
+    }
+
+    .beneficio {
+        width: 40px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 20px;
+        gap: 30px;
+    }
+}

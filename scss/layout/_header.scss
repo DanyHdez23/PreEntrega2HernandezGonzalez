@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+
+    img {
+        width: 250px;
+    }
+
+    .navbar-nav {
+        .nav-link {
+            color: var(--primario);
+            font-weight: 600; 
+        }
+    }
+}

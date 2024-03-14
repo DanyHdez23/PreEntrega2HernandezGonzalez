@@ -1,0 +1,51 @@
+.container {
+    &.servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin-top: 80px;
+        padding-bottom: 80px;
+
+        .titulo-servicios {
+            color: var(--primario);
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        .card {
+            width: 100%;
+
+            .card-body {
+                text-align: center;
+
+                .card-title {
+                    color: var(--primario);
+                    font-weight: bold;
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                }
+
+                .card-text {
+                    color: var(--texto);
+                    margin-bottom: 20px;
+                }
+
+                .btn-primary {
+                    background-color: var(--secundario);
+                    border-color: var(--secundario);
+                    color: white;
+                    font-weight: bold;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: var(--azul-logo);
+                    }
+                }
+            }
+        }
+    }
+}
+

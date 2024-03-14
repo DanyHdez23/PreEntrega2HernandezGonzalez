@@ -1,0 +1,17 @@
+.contact-form {
+    margin: 80px 120px;
+    display: flex;
+    gap: 80px;
+    justify-content: space-around;
+
+    .formulario {
+        flex: 1;
+        padding: 30px;
+    }
+
+    .detalles-contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

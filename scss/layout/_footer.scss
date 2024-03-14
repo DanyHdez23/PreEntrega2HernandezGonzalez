@@ -1,0 +1,28 @@
+.footer-container {
+    background-color: var(--bg-gris);
+    display: grid;
+    align-items: start;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px 35px;
+
+    img {
+        grid-column: span 1;
+        width: 70%;
+    }
+
+    .contact-info,
+    .services {
+        grid-column: span 1;
+    }
+
+    .copyright {
+        grid-column: span 3;
+        font-size: 16px;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
