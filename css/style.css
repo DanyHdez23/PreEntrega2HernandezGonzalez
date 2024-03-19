@@ -4,32 +4,24 @@ html {
   font-size: 18px;
 }
 
-:root {
-  --blanco: #ffffff;
-  --azul-logo: #1B277B;
-  --primario: #183B59;
-  --secundario: #2B73B2;
-  --bg-gris: #E3E8ED;
-}
-
 h1 {
-  color: var(--blanco);
+  color: #ffffff;
   padding-bottom: 70px;
   font-size: 55px;
 }
 
 h2 {
   font-size: 40px;
-  color: var(--blanco);
+  color: #ffffff;
 }
 
 h3 {
   font-size: 25px;
-  color: var(--primario);
+  color: #183B59;
 }
 
 h4 {
-  color: var(--primario);
+  color: #183B59;
   font-size: 18px;
 }
 
@@ -43,12 +35,12 @@ header img {
   width: 250px;
 }
 header .navbar-nav .nav-link {
-  color: var(--primario);
+  color: #183B59;
   font-weight: 600;
 }
 
 .footer-container {
-  background-color: var(--bg-gris);
+  background-color: #E3E8ED;
   display: grid;
   align-items: start;
   justify-content: space-around;
@@ -86,19 +78,19 @@ header .navbar-nav .nav-link {
 }
 .hero .botones-hero a {
   text-decoration: none;
-  color: var(--azul-logo);
-  background-color: var(--blanco);
+  color: #1B277B;
+  background-color: #ffffff;
   padding: 5px 25px;
   border-style: solid;
   border-radius: 10px;
-  border-color: var(--blanco);
+  border-color: #ffffff;
   margin: 15px;
   font-size: 19px;
 }
 .hero .botones-hero a:hover {
-  background-color: var(--azul-logo);
+  background-color: #1B277B;
   color: #F2F5F7;
-  border-color: var(--azul-logo);
+  border-color: #1B277B;
 }
 
 .container {
@@ -120,7 +112,7 @@ header .navbar-nav .nav-link {
   padding-bottom: 80px;
 }
 .servicios .titulo-servicios {
-  color: var(--primario);
+  color: #183B59;
   grid-column: 1/-1;
   text-align: center;
 }
@@ -131,7 +123,7 @@ header .navbar-nav .nav-link {
   text-align: center;
 }
 .servicios .card .card-body .card-title {
-  color: var(--primario);
+  color: #183B59;
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -141,8 +133,8 @@ header .navbar-nav .nav-link {
   margin-bottom: 20px;
 }
 .servicios .card .card-body .btn-primary {
-  background-color: var(--secundario);
-  border-color: var(--secundario);
+  background-color: #2B73B2;
+  border-color: #2B73B2;
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -151,7 +143,7 @@ header .navbar-nav .nav-link {
   transition: background-color 0.3s ease;
 }
 .servicios .card .card-body .btn-primary:hover {
-  background-color: var(--azul-logo);
+  background-color: #1B277B;
 }
 
 .sub-hero {
@@ -183,6 +175,15 @@ header .navbar-nav .nav-link {
 .calendly-inline-widget {
   min-width: 900px;
   height: 700px;
+}
+
+.animacion-contacto {
+  display: flex;
+  justify-content: center;
+}
+.animacion-contacto dotlottie-player {
+  width: 600px;
+  height: 600px;
 }
 
 @media screen and (max-width: 425px) {
@@ -281,22 +282,26 @@ header .navbar-nav .nav-link {
     min-width: 100%;
     height: 600px;
   }
+  .animacion-contacto dotlottie-player {
+    width: 90%;
+    height: auto;
+  }
 }
 .boton {
   text-decoration: none;
-  color: var(--blanco);
-  background-color: var(--secundario);
+  color: #ffffff;
+  background-color: #2B73B2;
   padding: 5px 25px;
   border-style: solid;
   border-radius: 10px;
-  border-color: var(--blanco);
+  border-color: #ffffff;
   margin: 15px;
   font-size: 19px;
 }
 .boton:hover {
-  background-color: var(--azul-logo);
+  background-color: #1B277B;
   color: #F2F5F7;
-  border-color: var(--azul-logo);
+  border-color: #1B277B;
 }
 
 /*# sourceMappingURL=style.css.map */

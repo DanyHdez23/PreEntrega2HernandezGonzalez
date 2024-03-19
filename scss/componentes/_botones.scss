@@ -1,18 +1,20 @@
 .boton {
     text-decoration: none;
-    color: var(--blanco);
-    background-color: var(--secundario);
+    color: $blanco;
+    background-color: $secundario;
     padding: 5px 25px;
     border-style: solid;
     border-radius: 10px;
-    border-color: var(--blanco);
+    border-color: $blanco;
     margin: 15px;
     font-size: 19px;
+    
 
     &:hover {
-        background-color: var(--azul-logo);
+        background-color: $azul-logo;
         color: #F2F5F7;
-        border-color:var(--azul-logo) ;
+        border-color: $azul-logo ;
+        
     }
 
 }

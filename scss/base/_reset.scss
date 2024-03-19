@@ -3,32 +3,30 @@ html {
     font-size: 18px;
 }
 
-:root {
-    --blanco: #ffffff;
-    --azul-logo: #1B277B;
-    --primario: #183B59;
-    --secundario:  #2B73B2;
-    --bg-gris: #E3E8ED;
+$blanco: #ffffff;
+$azul-logo: #1B277B;
+$primario: #183B59;
+$secundario: #2B73B2;
+$bg-gris: #E3E8ED;
 
-}
 
 h1 {
-color: var(--blanco);
+color: $blanco;
 padding-bottom: 70px;
 font-size: 55px;
 }
 
 h2{
     font-size: 40px;
-    color: var(--blanco)
+    color: $blanco;
 }
 
 h3 {
     font-size: 25px ;
-    color: var(--primario) ;
+    color: $primario ;
 }
 
 h4 {
-    color:var(--primario);
+    color:$primario;
     font-size: 18px;
 }

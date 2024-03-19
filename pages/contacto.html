@@ -10,14 +10,18 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <header class=".container-fluid">
       <a href="../index.html">
-        <img src="../img/logo-SMI2.svg" alt="logo horizontal"/>
-    </a>
+        <img src="../img/logo-SMI2.svg" alt="logo horizontal" />
+      </a>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <button
@@ -32,8 +36,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul
-              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">Home</a>
               </li>
@@ -63,40 +66,25 @@
         class="container-fluid sub-hero"
         style="background-image: url(../img/contacto-hero.jpg)"
       >
-        <h1>Contáctanos</h1>
+        <h1 class="animate__animated animate__slideInUp">Contáctanos</h1>
       </div>
       <!-- Hero ....................-->
 
       <div class="contact-form">
         <div class="detalles-contacto">
-            <h3> Detalles de Contacto</h3>
+          <h3>Detalles de Contacto</h3>
 
           <ul class="list-group list-group-flush">
-            <li class="list-group-item" >
-              <img
-                src="../img/email.jpg"
-                alt="icono email"
-                width="40px"
-                
-              />
+            <li class="list-group-item">
+              <img src="../img/email.jpg" alt="icono email" width="40px" />
               <span>info@smartmarketinginternational.com</span>
             </li>
-            <li class="list-group-item" >
-              <img
-                src="../img/telefono.jpg"
-                alt="icono telefono"
-                width="50"
-                
-              />
+            <li class="list-group-item">
+              <img src="../img/telefono.jpg" alt="icono telefono" width="50" />
               <span>+477 234 07 30</span>
             </li>
-            <li class="list-group-item" >
-              <img
-                src="../img/pin.jpg"
-                alt="icono pin map"
-                width="50"
-                
-              />
+            <li class="list-group-item">
+              <img src="../img/pin.jpg" alt="icono pin map" width="50" />
               <span>León, Guanajuato.<br />México</span>
             </li>
           </ul>
@@ -147,14 +135,27 @@
               id="mensajeTextarea"
               rows="3"
             ></textarea>
-            
-            <button type="submit" class="btn btn-primary">Enviar</button>
 
+            <button type="submit" class="btn btn-primary">Enviar</button>
           </div>
         </div>
-        
+      </div>
 
-      
+      <div class="animacion-contacto">
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
+
+        <dotlottie-player
+          src="https://lottie.host/ea127bd3-bf8f-4544-a5fd-3e9bf9f7a008/llkUIFhftb.json"
+          background="transparent"
+          speed="1"
+          
+          loop
+          autoplay
+        ></dotlottie-player>
+      </div>
     </main>
 
     <!--.........Footer..........-->

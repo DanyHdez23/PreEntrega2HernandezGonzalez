@@ -6,7 +6,7 @@
         padding-bottom: 80px;
 
         .titulo-servicios {
-            color: var(--primario);
+            color: $primario;
             grid-column: 1 / -1;
             text-align: center;
         }
@@ -18,7 +18,7 @@
                 text-align: center;
 
                 .card-title {
-                    color: var(--primario);
+                    color: $primario;
                     font-weight: bold;
                     margin-top: 10px;
                     margin-bottom: 15px;
@@ -30,8 +30,8 @@
                 }
 
                 .btn-primary {
-                    background-color: var(--secundario);
-                    border-color: var(--secundario);
+                    background-color: $secundario;
+                    border-color: $secundario;
                     color: white;
                     font-weight: bold;
                     text-decoration: none;
@@ -40,7 +40,7 @@
                     transition: background-color 0.3s ease;
 
                     &:hover {
-                        background-color: var(--azul-logo);
+                        background-color: $azul-logo;
                     }
                 }
             }
